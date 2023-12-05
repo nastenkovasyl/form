@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input textarea {
+  border: none;
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+body {
+  padding-top: 200px;
+}
+.form_container {
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px 2px rgb(183, 183, 183);
+  padding: 20px 30px;
+}
+.form_title {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form_btn {
+  align-self: center;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form_container">
+      <h2 class="form_title">Форми</h2>
+      <form class="form">
+        <div class="form_element" input-name>
+          <svg class="form_element-icon">
+            <use href="/icons.svg#icon-name"></use>
+          </svg>
+          <input id="name" placeholder="Введіть ім'я" type="text" />
+        </div>
+        <div class="form_element" input-email>
+          <svg class="form_element-icon">
+            <use href="/icons.svg#icon-email"></use>
+          </svg>
+          <input id="email" placeholder="Введіть почту" type="email" />
+        </div>
+        <div class="form_element" input-password>
+          <svg class="form_element-icon">
+            <use href="/icons.svg#icon-password"></use>
+          </svg>
+          <input id="password" placeholder="Введіть пароль" type="password" />
+        </div>
+        <div class="form_element" input-coment>
+          <svg class="form_element-icon">
+            <use href="/icons.svg#icon-coment"></use>
+          </svg>
+          <textarea
+            placeholder="Залиш коментар"
+            name=""
+            id="comments"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <div class="form_element" input-check>
+          <label for="prapor">Я погоджуюсь з правилами</label>
+          <input id="prapor" type="checkbox" />
+        </div>
+        <button class="form_btn">Надіслати</button>
+      </form>
+    </div>
+  </body>
+</html>
