@@ -5,34 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="selector.css" />
   </head>
   <body>
     <div class="form_container">
       <h2 class="form_title">Форми</h2>
       <form class="form">
-        <div class="form_element" input-name>
-          <svg class="form_element-icon">
-            <use href="/icons.svg#icon-name"></use>
-          </svg>
-          <input id="name" placeholder="Введіть ім'я" type="text" />
+        <div class="form_element input-name" tabindex="0">
+          <label for="name" class="form_element-icon">
+            <svg class="form_element-svg">
+              <use href="/icons.svg#icon-name"></use>
+            </svg>
+          </label>
+
+          <input
+            class="form_element-input"
+            id="name"
+            placeholder="Введіть ім'я"
+            type="text"
+          />
         </div>
-        <div class="form_element" input-email>
-          <svg class="form_element-icon">
-            <use href="/icons.svg#icon-email"></use>
-          </svg>
-          <input id="email" placeholder="Введіть почту" type="email" />
+        <div class="form_element input-email" tabindex="0">
+          <label for="email" class="form_element-icon">
+            <svg class="form_element-svg">
+              <use href="/icons.svg#icon-email"></use>
+            </svg>
+          </label>
+
+          <input
+            class="form_element-input"
+            id="email"
+            placeholder="Введіть пошту"
+            type="email"
+          />
         </div>
-        <div class="form_element" input-password>
-          <svg class="form_element-icon">
-            <use href="/icons.svg#icon-password"></use>
-          </svg>
-          <input id="password" placeholder="Введіть пароль" type="password" />
+        <div class="form_element input-password" tabindex="0">
+          <label for="password" class="form_element-icon">
+            <svg class="form_element-svg">
+              <use href="/icons.svg#icon-password"></use>
+            </svg>
+          </label>
+          <input
+            class="form_element-input"
+            id="password"
+            placeholder="Введіть пароль"
+            type="password"
+          />
         </div>
-        <div class="form_element" input-coment>
-          <svg class="form_element-icon">
-            <use href="/icons.svg#icon-coment"></use>
-          </svg>
+        <div class="form_element input-coment" tabindex="0">
+          <label for="coment" class="form_element-icon">
+            <svg class="form_element-svg">
+              <use href="/icons.svg#icon-coment"></use>
+            </svg>
+          </label>
+
           <textarea
+            class="form_element-input"
             placeholder="Залиш коментар"
             name=""
             id="comments"
@@ -40,9 +68,9 @@
             rows="10"
           ></textarea>
         </div>
-        <div class="form_element" input-check>
+        <div class="form_element input-check">
           <label for="prapor">Я погоджуюсь з правилами</label>
-          <input id="prapor" type="checkbox" />
+          <input class="input-check_checkbox" id="prapor" type="checkbox" />
         </div>
         <button class="form_btn">Надіслати</button>
       </form>
